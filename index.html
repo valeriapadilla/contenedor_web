@@ -18,21 +18,19 @@
         let isMobileDevice = regexp.test(details);
         var info = document.getElementById("info");
         var imagen = document.getElementById("imagen");
-        /*Si se conecta por un celular*/
         imagen.innerHTML = 
         "<img src='https://d2cxctkhfj5y1y.cloudfront.net/images/que-es-la-verdad_1_723_460_80.jpg' width='600' height='300' alt='no se encuentra la imagen' /><br><br>";
         info.innerHTML = 
             "<H1>Periodico Colombiano</H1><br><a href='https://www.semana.com/nacion/medellin/articulo/movimiento-independientes-presento-tutela-para-frenar-la-suspension-del-alcalde-de-medellin/202231/'><b>Noticia 1</b>: Movimiento Independientes presentó tutela para frenar la suspensión del alcalde de Medellín </a>"
             +"<br><a href='https://www.semana.com/vida-moderna/articulo/papaya-asi-se-debe-consumir-para-eliminar-la-grasa-del-cuerpo/202254/'><b>Noticia 2</b>: Papaya: así se debe consumir para eliminar la grasa del cuerpo</a>"
             +"<br><a href='https://www.semana.com/vida-moderna/articulo/agujero-negro-revelan-que-pasaria-si-se-cae-en-uno-de-ellos/202243/'><b>Noticia 3</b>: Agujero negro: revelan qué pasaría si se cae en uno de ellos</a>";
-        
+        /*Si se conecta por un celular*/
         if (isMobileDevice) {
-            document.URL = "https://kodular.app/EHM-WPI";
             document.write("You are using cell");
         } 
         /*si se conecta por un pc*/
         else {
-            document.URL = "https://kodular.app/EHM-WPI";
+            document.write("You are using Desktop");
         } 
         
     </script>
