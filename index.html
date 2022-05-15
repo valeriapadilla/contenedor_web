@@ -16,6 +16,13 @@
         let details = navigator.userAgent;
         let regexp = /android|iphone|kindle|ipad/i;
         let isMobileDevice = regexp.test(details);
+                if (isMobileDevice) {
+            document.write("You are using cell");
+        } 
+        /*si se conecta por un pc*/
+        else {
+            document.write("You are using Desktop");
+        } 
         var info = document.getElementById("info");
         var imagen = document.getElementById("imagen");
         imagen.innerHTML = 
@@ -25,13 +32,7 @@
             +"<br><a href='https://www.semana.com/vida-moderna/articulo/papaya-asi-se-debe-consumir-para-eliminar-la-grasa-del-cuerpo/202254/'><b>Noticia 2</b>: Papaya: así se debe consumir para eliminar la grasa del cuerpo</a>"
             +"<br><a href='https://www.semana.com/vida-moderna/articulo/agujero-negro-revelan-que-pasaria-si-se-cae-en-uno-de-ellos/202243/'><b>Noticia 3</b>: Agujero negro: revelan qué pasaría si se cae en uno de ellos</a>";
         /*Si se conecta por un celular*/
-        if (isMobileDevice) {
-            document.write("You are using cell");
-        } 
-        /*si se conecta por un pc*/
-        else {
-            document.write("You are using Desktop");
-        } 
+
         
     </script>
 </body>
